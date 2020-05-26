@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="sip.com.morseconverter.MainActivity"
+    android:background="#f2f2f2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/viewCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="5dp">
+
+        <EditText
+            android:id="@+id/edt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="top"
+            android:hint="Write Message.."
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+    </android.support.v7.widget.CardView>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_toAlpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewCard"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:src="@drawable/alpha"
+            app:backgroundTint="@color/white"
+            app:fabSize="auto"
+            android:scaleType="centerCrop"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_below="@id/viewCard"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_toMarso"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_alignStart="@id/btn_toAlpha"
+            android:layout_height="wrap_content"
+            android:src="@drawable/morsee"
+            app:backgroundTint="@color/white"
+            android:scaleType="centerCrop"
+            app:fabSize="auto"
+             />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/viewCard"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:backgroundTint="@color/white"
+        app:fabSize="auto"
+        android:src="@drawable/play"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/btn_play"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_toAlpha"
+            android:layout_centerHorizontal="true"
+            android:gravity="top"
+            android:textCursorDrawable="@null"
+            android:textSize="18sp"
+           />
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
